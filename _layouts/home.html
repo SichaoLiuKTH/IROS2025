@@ -1,0 +1,52 @@
+---
+layout: single 
+classes: wide
+
+---
+
+The rapid advancement of generative AI and foundational models, such as large language models, is poised to transform the fields of robotics and manufacturing. These advanced AI technologies offer unprecedented capabilities in robot skills, control, interactions, and the development of general-purpose manipulation skills. Simultaneously, they are driving significant advancements in manufacturing systems, industrial digitalization, and automation. This workshop seeks to explore the cutting-edge applications of generative AI in these domains. 
+
+In robotics, the focus will be on the application of generative AI and foundational models to enable a generalist robot. AI is accelerating the development of robotic skills, including general-purpose manipulation, allowing robots to perform a wider range of tasks in diverse environments. In the manufacturing domain, generative AI and foundational models are being leveraged to optimize manufacturing systems, drive industrial digitalization, and enable advanced automation. These technologies are at the core of smart manufacturing, where AI-driven decision-making processes lead to more efficient, flexible, and resilient production systems.
+
+This workshop is to encourage state-of-the-art and visionary research works on generative AI and foundation models for robotics and manufacturing. Topics will include, but are not limited to:
+
+<ul>
+
+  <li><a href="/topics/hdd">AI-powered industrial digitalisation and automation</a></li>
+  <li><a href="/topics/cda">Human-robot collaboration enhanced by generative AI</a></li>
+  <li><a href="/topics/amt">Foundational models in robotics control and manipulation</a></li>
+  <li><a href="/topics/estimation">VLM/LLM-driven robotic manufacturing/assembly systems</a></li>
+  <li><a href="/topics/balance">Data-efficient generative AI for robotics and manufacturing</a></li>
+  <li><a href="/topics/mpc">Vision-language-conditioned robot navigation and manipulation</a></li>
+  <li><a href="/topics/thls">Generative models for robotic learning in manufacturing systems</a></li>
+  <li><a href="/topics/open">Human-in-the-loop reinforcement learning for precision manipulation</a></li>
+  <li><a href="/topics/dda"> Industrial large models and foundation models in smart manufacturing</a></li>
+</ul> 
+
+Attendees will have the opportunity to engage in face-to-face discussions with both junior and senior scientists, gain hands-on experience with the latest AI technologies in robotics and manufacturing, and network with researchers from the United States, Europe, and Asia. We will also live-cast the workshop on YouTube and disseminate recorded presentations through our website.
+
+In summary, this workshop will summarize the latest technologies and insights in generative AI for robotic applications and manufacturing, while promoting scientific exchange and community engagement.
+
+<!-- <h3>Live Streaming</h3> -->
+
+<!-- <hr/>
+<h5>蔻享学术 Koushare</h5>
+<iframe width="1050" height="750" src="https://www.koushare.com/lives/room/132150" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr/> -->
+
+
+{{ content }}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% for post in posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
